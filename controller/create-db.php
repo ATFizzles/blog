@@ -30,5 +30,14 @@
 		echo "Database already exists";
 	}
 
+	//query creates table
+	//table name is posts
+	//no values can be null
+	$query = $connection->query("CREATE TABLE posts ("
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		. "title varchar(255) NOT NULL,"
+		. "post text NOT NULL,"
+		. "PRIMARY KEY (id))");
+
 	//closes connection
 	$connection->close();
