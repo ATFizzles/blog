@@ -9,7 +9,7 @@
 
 	//checks for error
 	if($connection->connect_error) {
-		die("Error: " . $connection->connect_error);
+		die("<p>Error: " . $connection->connect_error . "</p>");
 	}
 
 	//try to acces database to mysqli
@@ -21,23 +21,34 @@
 
 		//if database is created
 		if($query){
-			echo "successfully created database " . $database;
+			echo "<p>successfully created database " . $database . "</p>";
 		}
 	}
 
 	//if database already exists
 	else {
-		echo "Database already exists";
+		echo "<p>Database already exists</p>";
 	}
 
 	//query creates table
-	//table name is posts
+	//table name is postsR
 	//no values can be null
+	//table holds id string and posts text
 	$query = $connection->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "title varchar(255) NOT NULL,"
 		. "post text NOT NULL,"
 		. "PRIMARY KEY (id))");
+
+	//checks if query was successfully applied or run in the database
+	//<p> and </p> are html tags within php
+	if($query){
+		echo "<p>Successfully created table: posts</p>";
+	}
+
+	else {
+		echo "<p>$connection->error</p>";
+	}
 
 	//closes connection
 	$connection->close();
