@@ -6,7 +6,8 @@
 <nav>
 	<u>
 		<!--adds link to webpage-->
-		<!--php code within the li & it echoes the post.php (easier/better way)--> 
+		<!--php code within the li--> 
+		<!--echoes the value of $path from congif.php and attaches it to "post.php"-->
 		<li><a href="<?php echo $path . "post.php"?>">Blog Post form</a></li>
 	</u>
 </nav>
