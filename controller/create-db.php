@@ -1,6 +1,6 @@
 <?php
 	//connects to index
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	//constructed mysqli object
 	//helps connect to server on localhost
