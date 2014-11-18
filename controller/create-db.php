@@ -7,10 +7,7 @@
 	//opens connection
 	$connection = new mysqli($host, $username, $password);
 
-	//checks for error
-	if($connection->connect_error) {
-		die("<p>Error: " . $connection->connect_error . "</p>");
-	}
+	
 
 	//try to acces database to mysqli
 	$exists = $connection->select_db($database);

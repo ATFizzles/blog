@@ -24,12 +24,27 @@
 
 		//functions get rid of excess repetition
 		//opens connection
+		//creates new mysqli object
+		//checks if there is a conection error
 		public function openConnection(){
+			$this->connection = new mysqli($this->host);
+			$this->connection = new mysqli($this->username);
+			$this->connection = new mysqli($this->password);
+			$this->connection = new mysqli($this->database); 
+
+			//checks for error
+		if($this->connection->connect_error) {
+			die("<p>Error: " . $this->connection->connect_error . "</p>");
+	}
 
 		}
 		//closes connectiom
 		public function closeConnection(){
-
+			//isset checks if there is something in the variable (if there is info)
+			//checks for info in connection variable
+			if(isset($this->connection)){
+				$this->connection->close();
+			}
 		}
 
 		//string always passed as a variable
