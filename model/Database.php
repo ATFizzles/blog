@@ -22,6 +22,8 @@
 			$this->database = $database;
 		}
 
+		//a function is a block of statements that can be used again and again in a program
+		//functions are executed by a call to a function
 		//functions get rid of excess repetition
 		//opens connection
 		//creates new mysqli object
