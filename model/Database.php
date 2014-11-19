@@ -50,7 +50,17 @@
 		}
 
 		//string always passed as a variable
+		//takes in string of text and uses string of text to query the database
 		public function query($string){
+			$this->openConnection();
 
+			//result is stored in $query variable
+			//query the database
+			$query = $this->connection->query($string);
+
+			$this->closeConnection();
+
+			//returns the results
+			return $query;
 		}
 	}
