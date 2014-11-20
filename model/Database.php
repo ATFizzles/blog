@@ -9,6 +9,7 @@
 		private $username;
 		private $password;
 		private $database;
+		public $error;
 
 		//correct way to define your constructor variables
 		//_construct allows you to build an object
@@ -20,7 +21,36 @@
 			$this->username = $username;
 			$this->password = $password;
 			$this->database = $database;
-		}
+
+
+			//constructed mysqli object
+			//helps connect to server on localhost
+			//opens connection
+			$this->connection = new mysqli($host, $username, $password);
+
+
+			if($this->connection->connect_error){
+				die("<p>Error: " . $this->connection->connect_error . "</p>");
+			}
+
+			//try to acces database to mysqli
+			$exists = $this->connection->select_db($database);
+
+			//checks if database is connected to query
+			if(!$exists){
+				$query = $this->connection->query("CREATE DATABASE $database");
+
+				//if database is created
+				if($query){
+					echo "<p>successfully created database " . $database . "</p>";
+				}
+			}
+
+			//if database already exists
+			else {
+				echo "<p>Database already exists</p>";
+			}
+				}
 
 		//a function is a block of statements that can be used again and again in a program
 		//functions are executed by a call to a function
@@ -35,9 +65,9 @@
 			$this->connection = new mysqli($this->database); 
 
 			//checks for error
-		if($this->connection->connect_error) {
-			die("<p>Error: " . $this->connection->connect_error . "</p>");
-	}
+			if($this->connection->connect_error) {
+				die("<p>Error: " . $this->connection->connect_error . "</p>");
+			}
 
 		}
 		//closes connectiom
@@ -57,6 +87,11 @@
 			//result is stored in $query variable
 			//query the database
 			$query = $this->connection->query($string);
+
+			//checks if query is not good
+			if(!$query){
+				$this->error = $this->connection->error;
+			}
 
 			$this->closeConnection();
 
