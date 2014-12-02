@@ -12,7 +12,7 @@
 	//query is a method
 	//INSERT INTO adds info into the specific tables
 	//INSERT INTO is an action
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+	$query = $_SESSION{"connection"}->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//if query is successful it outputs the echo
 	if ($query) {
@@ -20,5 +20,5 @@
 	}
 	//if query wasn't successful it outputs this echo
 	else{
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION{"connection"}->error . "</p>";
 	}
