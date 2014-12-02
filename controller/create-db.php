@@ -19,6 +19,7 @@
 	}
 
 	//creating new session to open connection
+	//_SESSION stores data from "connection"
 	else {
 		echo "<p>" . $_SESSION{"connection"}->error . "</p>";
 	}

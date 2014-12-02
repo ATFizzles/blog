@@ -18,5 +18,6 @@
 		//new object
 		$connection = new Database($host, $username, $password, $database);
 
+		//stores connection in _SESSION variable
 		$_SESSION{"connection"} = $connection;
 	}
