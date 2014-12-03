@@ -50,7 +50,7 @@
 			else {
 				echo "<p>Database already exists</p>";
 			}
-				}
+		}
 
 		//a function is a block of statements that can be used again and again in a program
 		//functions are executed by a call to a function

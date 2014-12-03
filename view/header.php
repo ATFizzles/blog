@@ -8,4 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title></title>
 </head>
+	<header id="header">
+		
+	</header>
 <body>
