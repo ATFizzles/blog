@@ -27,6 +27,7 @@
 
 	//new query variable connected to variable _SESSION, which stores data from connection
 	//creating elements of table users
+	//new database table to store registered users
 	$query = $_SESSION["connection"]->query("CREATE TABLE users ("
 		//automatically increments the id # based on previous one
 		. "id int(11) NOT NULL AUTO_INCREMENT, "

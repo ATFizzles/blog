@@ -9,6 +9,23 @@
 	<title></title>
 </head>
 	<header id="header">
-		
+	<div class="row">
+		<div class="col-xs-4">
+			<h1>
+				Axel Tanner
+			</h1>
+		</div>
+		<div id="social" class="col-xs-4">
+			<div class="col-xs-3">
+				<img src="/images/twitter.jpg">
+			</div>
+			<div class="col-xs-3">
+				
+			</div>
+			<div class="col-xs-3">
+				
+			</div>
+		</div>
+	</div>
 	</header>
 <body>
