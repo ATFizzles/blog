@@ -11,6 +11,7 @@
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "title varchar(255) NOT NULL,"
 		. "post text NOT NULL,"
+		. "DateTime datetime NOT NULL,"
 		. "PRIMARY KEY (id))");
 
 	//checks if query was successfully applied or run in the database
