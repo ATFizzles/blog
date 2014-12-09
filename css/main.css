@@ -1,5 +1,8 @@
 body{
-	background-repeat: no-repeat;
+	background-image:url('../images/back1.jpg');
+	background-position:center;
+	background-attachment: fixed;
+	height: 10000px;
 }
 
 div{

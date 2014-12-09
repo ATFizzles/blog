@@ -10,8 +10,6 @@
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	echo $password;
-
 	//new salt variable
 	//registers unique salt for users crypted info
 	//tells program to uses shaw256 5000 times
@@ -19,4 +17,22 @@
 	//uses huge random number to create really unique id
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
-	echo $salt;
+	//new hashedPassword variable that stores the crypt version of the original password
+	$hashedPassword = crypt($password, $salt);
+
+	//creating new query
+	//setting info in table
+	//inserts info into table users
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email', "
+		. "username = '$username', "
+		. "password = '$hashedPassword', "
+		. "salt = '$salt'");
+
+	if($query){
+		echo "Successfully created user: $username";
+	}
+
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
