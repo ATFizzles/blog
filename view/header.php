@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title></title>
 </head>
-<body background="/blog/images/back.jpg">
+<body>
 	<header id="header">
 	<div class="row">
 		<div class="col-xs-4">

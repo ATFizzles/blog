@@ -3,6 +3,9 @@
 
 	//creates session
 	session_start();
+	//regenerates id of original session
+	//prevents hacking
+	session_regenerate_id(true);
 	//$path holds the string /blog/
 	$path = "/blog/";
 
