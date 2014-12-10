@@ -1,6 +1,14 @@
 <?php
 	//establishes connection to congif.php
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
+
+	if(!authenticateUser()){
+		//using $path to access index.php
+		//redirects user to index.php before killing program
+		header("location: " . $path . "index.php");
+		die();
+	}
 ?>
 
 <h1>Create Blog Post</h1>

@@ -1,6 +1,15 @@
 <?php
 	//connects to database.php file
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
+
+	//protects file
+	if(!authenticateUser()){
+		//using $path to access index.php
+		//redirects user before killing program
+		header("location: " . $path . "index.php");
+		die();
+	}
 
 	//recieves input, stores input, and later echoes INPUT_POST
 	//saving input in filter variables

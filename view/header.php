@@ -8,8 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title></title>
 </head>
-<body>
-	<header id="header">
+<header id="header">
 	<div class="row">
 		<div class="col-xs-4">
 			<h1>
@@ -17,16 +16,18 @@
 			</h1>
 		</div>
 		<div id="social" class="col-xs-4">
-			<div class="col-xs-3">
-				<img src="/blog/images/twitter.png" height="100px" width="100px">
+			<div id="a" class="col-xs-3">
+				<img src="/blog/images/twit.png" height="100px" width="100px">
 			</div>
-			<div class="col-xs-3">
-				<img src="/blog/images/facebook.png" height="100px" width="100px">
+			<div id="b" class="col-xs-3">
+				<img id="bb" src="/blog/images/facebook.png" height="100px" width="100px">
 			</div>
-			<div class="col-xs-3">
-				
+			<div id="c" class="col-xs-3">
+				<img src="/blog/images/insta.png" height="100px" width="100px">
 			</div>
 		</div>
 	</div>
 	</header>
+<body>
+	
 </body>

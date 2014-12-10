@@ -13,11 +13,11 @@
 
 			//checks if session variable is not true
 			if($_SESSION["authenticated"] != true){
-				return true;
+				return false;
 			}
 
 			else{
-				return false;
+				return true;
 			}
 		}
 	}
