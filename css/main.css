@@ -2,20 +2,76 @@ body{
 	background-image:url('../images/back1.jpg');
 	background-position:center;
 	background-attachment: fixed;
-	height: 10000px;
+	margin-top: 150px;
 }
 
-div{
-	border: 5px solid gray;
+img{
+	margin-top: 35px;
 }
 
-.row{
-	border: 5px solid blue;
+li{
+	text-decoration: none;
+	display: inline;
+	color: black;
+}
+
+#navigation a { 
+	text-decoration:none; 
+	color: white; 
+	padding:0px 10px; 
+	font-family:Arial; 
+	font-size:1em; 
+} 
+
+#navigation a:hover { 
+	text-decoration: none; 
+	color: black; 
+} 
+
+#left{
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.post{
+	border-bottom: 1px solid gray;
+	color: gray;
+	padding-left: 10px;
+}
+
+#aboutme{
+	color: gray;
+	margin: 0;
 }
 
 #header{
-	border: 5px solid black;
-	width: 100%;
+	
+	width: 102%;
+	position: fixed;	
+	top: 0;
+	height: 150px;
+	background-color: gray;
+	z-index:300;
+}
+
+#x{
+	margin-left: 50px;
+}
+
+#name{
+	font-family: 'Bubblegum Sans', cursive;
+	color: black;
+	font-size: 70px;
+	margin-left: 20px;
+}
+
+#bodyrow{
+	padding-top: 0px;
+}
+
+#aboutme{
+	position: fixed;
+	right: 0px;
 }
 
 #social{
@@ -23,14 +79,15 @@ div{
 }
 
 .col-xs-3{
-	border: 5px solid green;
 	margin-right: 30px;
 }
 
+.col-xs-6{
+	background-color: rgba(0, 0, 0, 0.7);
+}
 
 #bb:hover{
-	width: 110px;
-	height: 110px;
+	background-image:url('../images/facebook1.png'); 
 }
 
 @media (max-width: 320px) {

@@ -14,6 +14,7 @@
 			echo "<br />";
 			echo "<p>" . $row['post'] . "</h1>";
 			echo "<br />";
+			echo "<p>Posted on: " . $row['DateTime'] . "</p>";
 			echo "</div>";
 		}
 	}
