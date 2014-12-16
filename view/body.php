@@ -5,6 +5,6 @@
 		</div>
 		<div id="aboutme" class="col-xs-6">
 			<h1>About Me</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>My name is Axel Tanner.  I am a soophomore at Pasadena High School.  I live in Southern California and enjoy playing baseball.  I am a catcher and I like throwing runners out who think that they are fast.  Aint nobody running on me son. LOCKDOWN.  I used to skateboard but life kinda got busy and everything.  I was able to kickflip, heelflip, shuv it, ollie, and fs shuv it.  I felt like I was skating for Shake Junt or Something. I loved hanging with my friends in the streets of Dena and everything.  I wanna be a millionare.  Later.</p>
 		</div>
 	</div>

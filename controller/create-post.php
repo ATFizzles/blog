@@ -29,7 +29,7 @@
 
 	//if query is successful it outputs the echo
 	if ($query) {
-		echo "<p>Successfully inserted post: $title</p>";
+		header("Location: " . $path . "index.php");
 		//echoes the date/time
 		echo "Posted on: " . $date->format("M/D" . " " . "d/Y ") . "at: " . $time->format("g:i");
 	}
