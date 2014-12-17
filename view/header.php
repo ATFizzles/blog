@@ -35,14 +35,11 @@
 		</div>
 	</div>
 	<div class="col-xs-4">
-	<div id="navigation">
-		<li><a href="http://localhost/blog/index.php">Home</a></li>
-		<li><a href="http://localhost/blog/login.php">Login</a></li>
-		<li><a href="http://localhost/blog/post.php">Post</a></li>
-		<li><a href="http://localhost/blog/register.php">Register</a></li>
-	</div>
+		<div id="navigation">
+			<li><a href="http://localhost/blog/index.php">Home</a></li>
+			<li><a href="http://localhost/blog/login.php">Login</a></li>
+			<li><a href="http://localhost/blog/post.php">Post</a></li>
+			<li><a href="http://localhost/blog/register.php">Register</a></li>
+		</div>
 	</div>
 </header>
-<body>
-
-</body>
